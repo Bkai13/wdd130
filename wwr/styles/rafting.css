@@ -2,7 +2,7 @@
     --primary-color: rgb(255, 165, 0);
     --secondary-color: rgb(89, 155, 255);
     --accent1-color: rgb(255, 210, 87);
-    /*--accent2-color: rgb(177, 255, 87);*/
+    --accent2-color: rgb(177, 255, 87);
     --heading-font: "Times new Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -53,6 +53,11 @@ article {
     height: auto;
 }
 
+.hero article {
+    position: absolute;
+    background-color: brown;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -64,11 +69,12 @@ h1 {
     color: aliceblue;
 }
 
-article {
-    position: absolute;
-}
-
 .hero article img {
     float: right;
     width: 125px;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
 }
