@@ -1,8 +1,8 @@
 :root {
     --primary-color: rgb(255, 165, 0);
-    --secondary-color: rgb(89, 155, 255);
-    --accent1-color: rgb(255, 210, 87);
-    --accent2-color: rgb(177, 255, 87);
+    --secondary-color: rgb(57, 92, 56);
+    --accent1-color: rgb(26, 26, 26);
+    --accent2-color: rgb(57, 59, 59);
     --heading-font: "Times new Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +22,7 @@ header,
 main,
 footer {
     width: 840px;
-    margin: 0 auto;
+    margin: 30px;
 }
 
 h1,
@@ -35,8 +35,34 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 8px;
     padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 128px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    display: block;
+    color: rgb(80, 176, 255);
+    background-color: rgba(109, 109, 109, 0.226);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .socialmedia a {
@@ -54,6 +80,7 @@ article {
 }
 
 .hero article {
+    bottom: 10px;
     position: absolute;
     background-color: brown;
 }
@@ -74,7 +101,67 @@ h1 {
     width: 125px;
 }
 
-footer img {
+.history {
+    display: grid;
+    grid-template: 50px 1fr / 1fr 300px 1fr;
+    justify-items: center;
+}
+
+.history h2,
+.history img {
+    grid-column: 1/4;
+}
+
+.history .first p {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.history .second p {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.history img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(5, 1fr);
+    place-items: center;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.adventure img {
     width: 100px;
+    height: auto;
+}
+
+footer {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    align-items: center;
+}
+
+footer p {
+    grid-column: 2/3;
+}
+
+footer img {
+    width: 50px;
     height: auto;
 }
