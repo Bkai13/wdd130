@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 100%;
+    width: 150px;
+}
+
+body {
+    font-family: Arial, Georgia, serif;
+    font-size: 1.2em;
+    color: #fff;
+    background: #333;
+    padding: 1rem;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 3px solid rgb(0 0 0 / 0.5);
+    border-radius: 0.5rem;
+    background-color: #585858;
+    display: grid;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5rem;
+    color: rgb(255, 214, 30);
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #ffffff;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0 8rem 0 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0 6rem 0 0;
+}
+
+.column3 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0 4rem 1rem 0rem;
+}
+
+.column4 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0 0rem 1rem 0;
+}
+
+.column5 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0 0rem 0 0;
+}
